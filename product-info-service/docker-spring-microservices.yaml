@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: docker-spring-microservices-deployement
+  lables:
+    app: docker-spring-microservices
+spec:
+  replicas: 1
+  selector:
+    matchLabales:
+      app: docker-spring-microservices
+    templete:
+      metadata:
+        lables:
+          app: docker-spring-microservices
+    spec:
+      containers:
+        - name: docker-spring-microservices
+          image: tharushirachel/spring-microservices
+          ports:
+          - containerPort: 8080
