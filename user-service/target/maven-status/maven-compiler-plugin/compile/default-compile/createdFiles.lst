@@ -1,0 +1,8 @@
+com\example\user\UserApplication.class
+com\example\user\models\Rating.class
+com\example\user\models\UserRating.class
+com\example\user\models\Product.class
+com\example\user\resources\UserResource.class
+com\example\user\models\Comment.class
+com\example\user\models\Item.class
+com\example\user\models\UserComment.class
